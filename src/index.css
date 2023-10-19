@@ -253,40 +253,45 @@ ul {
   margin-top: 1rem;
 }
 /* ============= PROJECT CSS =============== */
+
 .section-center {
   width: 80vw;
   max-width: 40rem;
   margin: 10rem auto;
 }
+
 .section-center h4 {
   text-transform: uppercase;
   text-align: center;
 }
-.lorem-form {
+
+form {
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
-  margin-top: 2rem;
-  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
 }
-.lorem-form label {
+
+form label {
   font-size: 1.25rem;
 }
 
-.lorem-form input {
+form input {
   padding: 0.25rem 0.5rem;
-  width: 4rem;
-  border-radius: var(--borderRadius);
+  background-color: var(--grey-300);
   border-color: transparent;
-  background: var(--grey-300);
+  border-radius: var(--borderRadius);
   font-size: 1.25rem;
+  width: 4rem;
 }
 
-.lorem-form .btn {
+form .btn {
   align-self: stretch;
+  font-size: 1.25rem;
 }
 
 .lorem-text p {

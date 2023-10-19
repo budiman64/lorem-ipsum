@@ -12,7 +12,7 @@ const App = () => {
     setText(data.slice(0,amount));
   }
 
-  return <section>
+  return <section className="section-center">
     <h4>tired of boring lorem ipsum?</h4>
     <form onSubmit={handleSubmit}>
       <label htmlFor="amount">paragraphs: </label>
@@ -25,9 +25,9 @@ const App = () => {
       value={count}
       onChange={(e) => setCount(e.target.value)}>
       </input>
-      <button type="submit">generate</button>
+      <button className="btn"type="submit">generate</button>
     </form>
-    <article>
+    <article className="lorem-text">
       {text.map((item) => {
         return <p key={nanoid}>{item}</p>
       })}
